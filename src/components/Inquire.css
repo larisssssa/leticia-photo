@@ -1,0 +1,26 @@
+.inquire {
+  position: relative;
+  padding: 9rem 0;
+  color: var(--paper);
+  text-align: center;
+}
+
+.inquire-media {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(20, 16, 12, 0.55), rgba(20, 16, 12, 0.72)),
+    url('https://picsum.photos/id/1035/1600/900') center/cover no-repeat;
+  filter: saturate(0.7);
+}
+
+.inquire .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.inquire h2 {
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  font-weight: 400;
+  margin: 1rem 0 2rem;
+}

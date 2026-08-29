@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--paper);
+  overflow: hidden;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(20, 16, 12, 0.25) 0%, rgba(20, 16, 12, 0.15) 45%, rgba(20, 16, 12, 0.65) 100%),
+    url('https://picsum.photos/id/1015/1600/2000') center/cover no-repeat;
+  filter: saturate(0.72) sepia(0.12);
+  transform: scale(1.06);
+  animation: heroIn 2.4s ease forwards;
+}
+
+@keyframes heroIn {
+  from { transform: scale(1.12); opacity: 0.6; }
+  to { transform: scale(1.06); opacity: 1; }
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 0 6vw 5.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.hero-inner .eyebrow {
+  color: #EDE6D8;
+  opacity: 0.9;
+}
+
+.hero-inner h1 {
+  font-size: clamp(2.6rem, 6.4vw, 5.6rem);
+  font-weight: 400;
+  line-height: 1.03;
+  max-width: 14ch;
+}
+
+.hero-inner h1 em {
+  font-style: italic;
+  color: #EFE2D3;
+}
+
+.hero-sub {
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  max-width: 40ch;
+  color: #EEE7D9;
+  font-weight: 300;
+}
+
+.scroll-cue {
+  position: absolute;
+  right: 6vw;
+  bottom: 2.4rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--paper);
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.scroll-cue::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: var(--paper);
+  opacity: 0.6;
+  animation: cue 2.2s ease-in-out infinite;
+}
+
+@keyframes cue {
+  0%, 100% { transform: scaleY(0.4); opacity: 0.3; }
+  50% { transform: scaleY(1); opacity: 0.8; }
+}

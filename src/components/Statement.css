@@ -1,0 +1,20 @@
+.statement {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.statement h2 {
+  font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+  font-weight: 400;
+  max-width: 22ch;
+  margin: 0 auto;
+  line-height: 1.35;
+}
+
+.statement .eyebrow {
+  color: #C9A27D;
+  display: block;
+  margin-bottom: 1.4rem;
+}

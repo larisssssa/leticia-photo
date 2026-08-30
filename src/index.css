@@ -1,10 +1,11 @@
 :root {
-  --bone: #F4EFE6;
-  --ink: #2B241E;
-  --clay: #A9603A;
-  --sage: #6C7350;
-  --line: #DCD2BD;
-  --paper: #FBF8F2;
+  --bone: #EBE9E2;   /* linen */
+  --ink: #15150C;    /* black */
+  --clay: #9C9784;   /* darkgray (warm accent) */
+  --sage: #42422D;   /* darkslategray */
+  --line: #C4C3C9;   /* silver */
+  --paper: #EBE9E2;  /* linen (light text on dark sections) */
+  --silver: #AFB4B2; /* darkgray, spare neutral for hover/borders */
   --maxw: 1240px;
 }
 

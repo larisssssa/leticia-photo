@@ -1,9 +1,9 @@
 # Photography Website Template
 
 An editorial-style photography portfolio template built with React + Vite.
-All copy has been replaced with lorem ipsum placeholder text and `[bracketed
-field labels]` so it's obvious what to swap out and where — image alt text,
-buttons, headings, and footer fields are all marked as placeholders too.
+All site copy, images, and labels are driven by a single file —
+`src/content.js` — so you can update the entire site without opening any
+component.
 
 ## Structure
 
@@ -15,6 +15,7 @@ marlowe-rae-react/
 ├── src/
 │   ├── main.jsx
 │   ├── App.jsx
+│   ├── content.js         # ← EDIT THIS FILE to change any text/image/label
 │   ├── index.css          # design tokens + global styles
 │   └── components/
 │       ├── Header.jsx / .css
@@ -44,34 +45,48 @@ npm run build
 npm run preview
 ```
 
-## Filling in the template
+## Editing the site
 
-Every section uses one of two placeholder styles:
+Open **`src/content.js`**. Every section of the site is its own object in
+that file:
 
-- **`[Bracketed Field]`** — a short label telling you what belongs there
-  (e.g. `[Studio Name]`, `[Button Text]`, `[Client Name]`).
-- **Lorem ipsum paragraphs** — filler body copy showing the intended length
-  and tone of that block; replace with your real copy.
-
-Search each component file for these markers and swap in your content:
-
-| What to change | Where |
+| Object | Controls |
 |---|---|
-| Studio/brand name | `Header.jsx`, `Footer.jsx` |
-| Hero heading + subhead | `Hero.jsx` |
-| About section copy + portrait | `About.jsx` |
-| Pull-quote / philosophy line | `Statement.jsx` |
-| Gallery title, images, button | `Portfolio.jsx` (`FRAMES` array) |
-| Client quotes | `Testimonials.jsx` (`QUOTES` array) |
-| Process/experience steps | `Experience.jsx` (`STEPS` array) |
-| Call-to-action heading + email | `Inquire.jsx` |
-| Nav links, contact info, legal line | `Footer.jsx` |
+| `brand` | Studio name, tagline, email, office hours |
+| `nav` | Shared nav links (used in both header and footer) |
+| `hero` | Hero eyebrow, heading, subtext, background image |
+| `about` | About heading, body paragraphs, signature, portrait image |
+| `statement` | Pull-quote band eyebrow + heading |
+| `portfolio` | Gallery heading, subtext, button, and the array of gallery images |
+| `testimonials` | Array of client quotes + how fast they auto-rotate |
+| `experience` | Section heading + array of process steps |
+| `inquire` | Call-to-action eyebrow, heading, button text, background image |
+| `footer` | About blurb, menu labels, social links, legal/copyright lines |
+| `theme` | Reference copy of the color tokens (see note below) |
 
-- **Colors & fonts** — edit the CSS custom properties at the top of
-  `src/index.css` (`--bone`, `--ink`, `--clay`, `--sage`, `--line`, `--paper`)
-  and the Google Fonts link in `index.html`.
-- **Images** — placeholder photos are pulled from `picsum.photos`. Replace the
-  `src` URLs with your own images (and update the `alt` text placeholders too).
+Change any value in that file, save, and every component that uses it
+updates automatically — no need to touch anything in `src/components/`.
+
+### Adding or removing items
+
+Several fields are arrays, so you can add/remove entries directly:
+
+- `portfolio.frames` — add or remove `{ id, src }` objects to change the
+  gallery grid. The layout (`nth-child` rules in `Portfolio.css`) is tuned
+  for 8 frames; changing the count may require adjusting the grid spans.
+- `testimonials.quotes` — add/remove `{ text, who }` objects freely; the
+  slider and dot navigation adapt automatically.
+- `experience.steps` — add/remove `{ eyebrow, title, text }` objects; the
+  grid is `repeat(3, 1fr)` in CSS, so 3 items lay out best by default.
+- `nav` — add/remove `{ label, href }` objects; used identically by the
+  header and footer.
+
+### Colors & fonts
+
+`theme` in `content.js` is a **reference copy only** — actually changing the
+site's colors requires editing the CSS custom properties at the top of
+`src/index.css` (`--bone`, `--ink`, `--clay`, `--sage`, `--line`, `--paper`).
+Fonts are loaded via the Google Fonts `<link>` in `index.html`.
 
 ## Notes
 

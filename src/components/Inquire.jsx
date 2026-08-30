@@ -12,7 +12,7 @@ export default function Inquire() {
       <div className="wrap">
         <span className="eyebrow" style={{ color: '#EDE6D8' }}>{inquire.eyebrow}</span>
         <h2>{inquire.heading}</h2>
-        <a href={`mailto:${brand.email}`} className="btn light">{inquire.buttonText}</a>
+        <a href={inquire.booking} className="btn light">{inquire.buttonText}</a>
       </div>
     </section>
   )

@@ -1,11 +1,13 @@
+import content from '../content'
 import './Statement.css'
 
 export default function Statement() {
+  const { statement } = content
   return (
     <section className="statement">
       <div className="wrap">
-        <span className="eyebrow">[Section Label]</span>
-        <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</h2>
+        <span className="eyebrow">{statement.eyebrow}</span>
+        <h2>{statement.heading}</h2>
       </div>
     </section>
   )

@@ -1,12 +1,6 @@
 import { useEffect, useState } from 'react'
+import content from '../content'
 import './Header.css'
-
-const LINKS = [
-  { label: 'About', href: '#about' },
-  { label: 'Portfolio', href: '#portfolio' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Inquire', href: '#inquire' },
-]
 
 export default function Header() {
   const [solid, setSolid] = useState(false)
@@ -20,10 +14,10 @@ export default function Header() {
 
   return (
     <header className={solid ? 'solid' : ''}>
-      <a href="#" className="logo">[Studio&nbsp;Name]</a>
+      <a href="#" className="logo">{content.brand.name}</a>
       <nav>
         <ul>
-          {LINKS.map((link) => (
+          {content.nav.map((link) => (
             <li key={link.href}>
               <a href={link.href}>{link.label}</a>
             </li>

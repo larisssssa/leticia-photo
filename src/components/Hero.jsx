@@ -1,18 +1,20 @@
+import content from '../content'
 import './Hero.css'
 
 export default function Hero() {
+  const { hero } = content
   return (
     <section className="hero">
-      <div className="hero-media" />
+      <div
+        className="hero-media"
+        style={{ backgroundImage: `linear-gradient(180deg, rgba(20,16,12,.25) 0%, rgba(20,16,12,.15) 45%, rgba(20,16,12,.65) 100%), url('${hero.backgroundImage}')` }}
+      />
       <div className="hero-inner">
-        <span className="eyebrow">[Location] &nbsp;&middot;&nbsp; [Location] &nbsp;&middot;&nbsp; [Location]</span>
+        <span className="eyebrow">{hero.eyebrow}</span>
         <h1>
-          Lorem ipsum dolor sit <em>amet consectetur</em> adipiscing elit
+          {hero.headingBefore}<em>{hero.headingEmphasis}</em>{hero.headingAfter}
         </h1>
-        <p className="hero-sub">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <p className="hero-sub">{hero.subtext}</p>
       </div>
       <span className="scroll-cue">Scroll</span>
     </section>

@@ -9,10 +9,10 @@
 const content = {
   // ---- Brand -----------------------------------------------------------
   brand: {
-    name: "[Studio Name]",
-    tagline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    email: "hello@example.com",
-    officeHours: "[Office hours placeholder]",
+    name: "Leticia Ferreira Photography",
+    tagline: "East Coast Wedding Photographer",
+    email: "leticiafphotography@gmail.com",
+    officeHours: "Monday - Friday 9 AM - 5 PM",
   },
 
   // ---- Navigation (shared by header + footer) ---------------------------
@@ -25,7 +25,7 @@ const content = {
 
   // ---- Hero section -------------------------------------------------------
   hero: {
-    eyebrow: "[Location]  ·  [Location]  ·  [Location]",
+    eyebrow: "Wedding  ·  Lifestyle  ·  [Location]",
     headingBefore: "Lorem ipsum dolor sit ",
     headingEmphasis: "amet consectetur",
     headingAfter: " adipiscing elit",
@@ -36,14 +36,14 @@ const content = {
 
   // ---- About section -------------------------------------------------------
   about: {
-    eyebrow: "[Section Label]",
+    eyebrow: "Hey, I'm Letty!",
     heading:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+      "I'm so thankful you're here and I can't wait to capture your most precious moments.",
     paragraphs: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-      "In voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "I want my work to be a reflection of being in love and at peace, not just finding the perfect photo opportunity but rather capturing the love as it naturally unfolds in the way my clients show each other their love best.",
+      "Most importantly, always remembering, that the best photographs don’t just show what happened, but show exactly how it felt.",
     ],
-    signature: "[Signature / Name]",
+    signature: "Leticia Ferreira",
     portraitImage: "public/images/L-41.JPG",
     portraitAlt: "[Portrait placeholder]",
   },
@@ -57,11 +57,10 @@ const content = {
 
   // ---- Portfolio / gallery section -----------------------------------------
   portfolio: {
-    heading: "[Gallery Title]",
-    subtext:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    buttonText: "[Button Text]",
-    buttonHref: "#",
+    heading: "Gallery",
+    subtext: "Your memories, my camera.",
+    buttonText: "Gallery",
+    buttonHref: "https://leticiafphoto.pic-time.com/client",
     frames: [
       { id: "01", src: "public/images/gallery-1.jpg" },
       { id: "02", src: "public/images/gallery-2.jpg" },
@@ -121,22 +120,26 @@ const content = {
   inquire: {
     eyebrow: "[Eyebrow Label]",
     heading: "[Call-to-Action Heading]",
-    buttonText: "[Button Text]",
+    buttonText: "Book Now",
     backgroundImage: "public/images/header-1.jpg",
+    booking: "https://book.usesession.com/i/4kTbegN5j",
   },
 
   // ---- Footer ----------------------------------------------------------------
   footer: {
-    aboutText:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    exploreLabel: "[Menu Label]",
-    connectLabel: "[Menu Label]",
+    aboutText: "your memories, my camera",
+    exploreLabel: "Explore",
+    connectLabel: "Connect",
     social: [
-      { label: "[Social]", href: "#" },
-      { label: "[Social]", href: "#" },
+      { label: "Instagram", href: "https://www.instagram.com/leticiafphoto/" },
+      { label: "TikTok", href: "https://www.tiktok.com/@lettyferreira__" },
+      {
+        label: "Google Reviews",
+        href: "https://share.google/bbSuEQHaKSR8UXGLG",
+      },
     ],
-    legalLine: "© [Year] [Studio Name]. [Legal / copyright placeholder].",
-    noteLine: "[Footer note placeholder]",
+    legalLine: "© 2026 Leticia Ferreira Photography.",
+    noteLine: "",
   },
 
   // ---- Design tokens (kept in sync with src/index.css custom properties) -----

@@ -17,10 +17,10 @@ const content = {
 
   // ---- Navigation (shared by header + footer) ---------------------------
   nav: [
-    { label: "[Nav Link]", href: "#about" },
-    { label: "[Nav Link]", href: "#portfolio" },
-    { label: "[Nav Link]", href: "#experience" },
-    { label: "[Nav Link]", href: "#inquire" },
+    { label: "About", href: "#about" },
+    { label: "Portfolio", href: "#portfolio" },
+    { label: "Experience", href: "#experience" },
+    { label: "Inquire", href: "#inquire" },
   ],
 
   // ---- Hero section -------------------------------------------------------

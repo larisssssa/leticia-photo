@@ -31,7 +31,7 @@ const content = {
     headingAfter: " adipiscing elit",
     subtext:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    backgroundImage: "https://picsum.photos/id/1015/1600/2000",
+    backgroundImage: "public/images/cta-1.jpg",
   },
 
   // ---- About section -------------------------------------------------------
@@ -44,7 +44,7 @@ const content = {
       "In voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     ],
     signature: "[Signature / Name]",
-    portraitImage: "https://picsum.photos/id/1027/900/1100",
+    portraitImage: "public/images/L-41.JPG",
     portraitAlt: "[Portrait placeholder]",
   },
 
@@ -63,14 +63,14 @@ const content = {
     buttonText: "[Button Text]",
     buttonHref: "#",
     frames: [
-      { id: "01", src: "https://picsum.photos/id/1011/900/1100" },
-      { id: "02", src: "https://picsum.photos/id/1005/700/500" },
-      { id: "03", src: "https://picsum.photos/id/1025/700/500" },
-      { id: "04", src: "https://picsum.photos/id/1035/700/900" },
-      { id: "05", src: "https://picsum.photos/id/1041/700/900" },
-      { id: "06", src: "https://picsum.photos/id/1043/700/900" },
-      { id: "07", src: "https://picsum.photos/id/1059/1200/700" },
-      { id: "08", src: "https://picsum.photos/id/1074/700/900" },
+      { id: "01", src: "public/images/gallery-1.jpg" },
+      { id: "02", src: "public/images/gallery-2.jpg" },
+      { id: "03", src: "public/images/gallery-3.jpg" },
+      { id: "04", src: "public/images/gallery-4.jpg" },
+      { id: "05", src: "public/images/gallery-5.jpg" },
+      { id: "06", src: "public/images/gallery-6.jpg" },
+      { id: "07", src: "public/images/gallery-7.jpg" },
+      { id: "08", src: "public/images/gallery-8.jpg" },
     ],
     imageAlt: "[Gallery image placeholder]",
   },
@@ -122,7 +122,7 @@ const content = {
     eyebrow: "[Eyebrow Label]",
     heading: "[Call-to-Action Heading]",
     buttonText: "[Button Text]",
-    backgroundImage: "https://picsum.photos/id/1035/1600/900",
+    backgroundImage: "public/images/header-1.jpg",
   },
 
   // ---- Footer ----------------------------------------------------------------

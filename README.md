@@ -8,7 +8,7 @@ component.
 ## Structure
 
 ```
-marlowe-rae-react/
+lfp/
 ├── index.html
 ├── package.json
 ├── vite.config.js

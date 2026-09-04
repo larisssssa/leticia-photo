@@ -31,7 +31,7 @@ const content = {
     headingAfter: "forever",
     subtext:
       "Photographing weddings the way they actually happen: full of laughter, quiet glances, and moments too good to stage.",
-    backgroundImage: "/images/cta-1.jpg",
+    backgroundImage: "/images/header-1.jpg",
   },
 
   // ---- About section -------------------------------------------------------
@@ -70,6 +70,14 @@ const content = {
       { id: "06", src: "/images/gallery-6.jpg" },
       { id: "07", src: "/images/gallery-7.jpg" },
       { id: "08", src: "/images/gallery-8.jpg" },
+      { id: "09", src: "/images/gallery-9.jpg" },
+      { id: "10", src: "/images/gallery-10.jpg" },
+      { id: "11", src: "/images/gallery-11.jpg" },
+      { id: "12", src: "/images/gallery-12.jpg" },
+      { id: "13", src: "/images/gallery-13.jpg" },
+      { id: "14", src: "/images/gallery-14.jpg" },
+      { id: "15", src: "/images/gallery-15.jpg" },
+      { id: "16", src: "/images/gallery-16.jpg" },
     ],
     imageAlt: "[Gallery of moments captured by Leticia]",
   },
@@ -126,7 +134,7 @@ const content = {
     eyebrow: "Ready When You Are",
     heading: "Let's capture something real",
     buttonText: "Book Now",
-    backgroundImage: "/images/header-1.jpg",
+    backgroundImage: "/images/cta-1.jpg",
     booking: "https://book.usesession.com/i/4kTbegN5j",
   },
 

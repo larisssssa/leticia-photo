@@ -25,12 +25,12 @@ const content = {
 
   // ---- Hero section -------------------------------------------------------
   hero: {
-    eyebrow: "Wedding  ·  Lifestyle  ·  [Location]",
-    headingBefore: "Lorem ipsum dolor sit ",
-    headingEmphasis: "amet consectetur",
-    headingAfter: " adipiscing elit",
+    eyebrow: "Wedding  ·  Lifestyle  ·  Event",
+    headingBefore: "Real moments ",
+    headingEmphasis: "beautifully kept ",
+    headingAfter: "forever",
     subtext:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Photographing weddings the way they actually happen: full of laughter, quiet glances, and moments too good to stage.",
     backgroundImage: "/images/cta-1.jpg",
   },
 
@@ -45,7 +45,7 @@ const content = {
     ],
     signature: "Leticia Ferreira",
     portraitImage: "/images/L-41.JPG",
-    portraitAlt: "[Portrait of Leticia]",
+    portraitAlt: "Leticia Ferreira, wedding photographer, smiling outdoors",
   },
 
   // ---- Statement / pull-quote band -----------------------------------------
@@ -71,7 +71,7 @@ const content = {
       { id: "07", src: "/images/gallery-7.jpg" },
       { id: "08", src: "/images/gallery-8.jpg" },
     ],
-    imageAlt: "[Gallery image placeholder]",
+    imageAlt: "[Gallery of moments captured by Leticia]",
   },
 
   // ---- Testimonials section -------------------------------------------------
@@ -99,22 +99,22 @@ const content = {
 
   // ---- Experience / process steps --------------------------------------------
   experience: {
-    heading: "[Section Title]",
-    subtext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    heading: "The Experience",
+    subtext: "From first hello to final gallery, here's what working together looks like.",
     steps: [
       {
-        eyebrow: "[Step Label]",
-        title: "[Step Title]",
+        eyebrow: "01",
+        title: "Reach Out",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       },
       {
-        eyebrow: "[Step Label]",
-        title: "[Step Title]",
+        eyebrow: "02",
+        title: "The Day Of",
         text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
       },
       {
-        eyebrow: "[Step Label]",
-        title: "[Step Title]",
+        eyebrow: "03",
+        title: "Your Gallery",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
       },
     ],
@@ -122,8 +122,8 @@ const content = {
 
   // ---- Inquire / call-to-action section -------------------------------------
   inquire: {
-    eyebrow: "[Eyebrow Label]",
-    heading: "[Call-to-Action Heading]",
+    eyebrow: "Ready When You Are",
+    heading: "Let's capture something real",
     buttonText: "Book Now",
     backgroundImage: "/images/header-1.jpg",
     booking: "https://book.usesession.com/i/4kTbegN5j",

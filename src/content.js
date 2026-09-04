@@ -44,7 +44,7 @@ const content = {
       "Most importantly, always remembering, that the best photographs don’t just show what happened, but show exactly how it felt.",
     ],
     signature: "Leticia Ferreira",
-    portraitImage: "/images/L-41.JPG",
+    portraitImage: "/images/L-41.jpg",
     portraitAlt: "Leticia Ferreira, wedding photographer, smiling outdoors",
   },
 

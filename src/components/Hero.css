@@ -4,7 +4,7 @@
   min-height: 640px;
   display: flex;
   align-items: flex-end;
-  color: var(--paper);
+  color: var(--color-text-inverse);
   overflow: hidden;
 }
 
@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: var(--paper);
+  color: var(--color-text-inverse);
   font-size: 0.68rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -79,7 +79,7 @@
   display: block;
   width: 1px;
   height: 60px;
-  background: var(--paper);
+  background: var(--color-text-inverse);
   opacity: 0.6;
   animation: cue 2.2s ease-in-out infinite;
 }

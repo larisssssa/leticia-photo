@@ -1,8 +1,16 @@
 .inquire {
   position: relative;
   padding: 9rem 0;
-  color: var(--paper);
+  color: var(--color-text-inverse);
   text-align: center;
+}
+
+/* Global .eyebrow uses --color-accent, which only reaches ~2:1 against
+   this section's dark photo overlay. Override to the inverse text color
+   used everywhere else on dark backgrounds. */
+.inquire .eyebrow {
+  color: var(--color-text-inverse);
+  opacity: 0.85;
 }
 
 .inquire-media {

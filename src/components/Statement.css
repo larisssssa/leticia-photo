@@ -1,6 +1,6 @@
 .statement {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--color-bg-inverse);
+  color: var(--color-text-inverse);
   padding: 6rem 0;
   text-align: center;
 }

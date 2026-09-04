@@ -85,7 +85,29 @@ Several fields are arrays, so you can add/remove entries directly:
 
 `theme` in `content.js` is a **reference copy only** — actually changing the
 site's colors requires editing the CSS custom properties at the top of
-`src/index.css` (`--bone`, `--ink`, `--clay`, `--sage`, `--line`, `--paper`).
+`src/index.css`. Each property is named for *where it's used*, not what it
+looks like, so you can swap the whole palette without touching any component:
+
+| Property | Used for |
+|---|---|
+| `--color-bg` | Light section/page backgrounds |
+| `--color-text` | Body text on light backgrounds |
+| `--color-bg-inverse` | Dark section backgrounds (Statement, Footer, button hovers) |
+| `--color-text-inverse` | Text on dark backgrounds |
+| `--color-bg-accent` | Testimonials section background |
+| `--color-accent` | Eyebrow labels, focus rings, hover accents (light backgrounds only) |
+| `--color-border` | Hairline dividers, subtle borders |
+
+**Accessibility note:** if you swap in new colors, re-check contrast —
+`--color-accent` only meets WCAG AA (4.5:1) against `--color-bg`, not against
+`--color-bg-inverse` (that's why the focus ring switches to
+`--color-text-inverse` inside dark sections; see the rule below the `:root`
+block in `index.css`). `--color-bg-accent` needs at least a 4.5:1 ratio
+against `--color-text-inverse` since real body copy (the testimonial quotes)
+sits on top of it — a colorpicker's raw swatch may need to be darkened or
+lightened slightly to hit that, the same way the current Dusty Olive value
+was.
+
 Fonts are loaded via the Google Fonts `<link>` in `index.html`.
 
 ## Notes

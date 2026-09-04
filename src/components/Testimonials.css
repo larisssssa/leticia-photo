@@ -1,6 +1,6 @@
 .testimonials {
-  background: var(--sage);
-  color: var(--paper);
+  background: var(--color-bg-accent);
+  color: var(--color-text-inverse);
   padding: 7rem 0;
   position: relative;
 }
@@ -66,12 +66,12 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 1px solid var(--paper);
+  border: 1px solid var(--color-text-inverse);
   background: transparent;
   cursor: pointer;
   padding: 0;
 }
 
 .t-dots button.active {
-  background: var(--paper);
+  background: var(--color-text-inverse);
 }

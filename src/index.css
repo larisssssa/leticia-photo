@@ -1,11 +1,16 @@
 :root {
-  --bone: #EBE9E2;   /* linen */
-  --ink: #15150C;    /* black */
-  --clay: #9C9784;   /* darkgray (warm accent) */
-  --sage: #42422D;   /* darkslategray */
-  --line: #C4C3C9;   /* silver */
-  --paper: #EBE9E2;  /* linen (light text on dark sections) */
-  --silver: #AFB4B2; /* darkgray, spare neutral for hover/borders */
+  /* ---- Color palette ---------------------------------------------------
+     Named for where each color is USED, not what it looks like, so the
+     palette can be swapped later without hunting through every component.
+     Source palette: Parchment / Dark Khaki / Dusty Olive / Dry Sage / Ash Brown.
+  ------------------------------------------------------------------------ */
+  --color-bg: #FDFBF7;            /* Parchment — light section/page background */
+  --color-text: #373D20;          /* Dark Khaki — body text on light backgrounds */
+  --color-bg-inverse: #373D20;    /* Dark Khaki — dark section backgrounds (Statement, Footer, hovers) */
+  --color-text-inverse: #FDFBF7;  /* Parchment — text on dark backgrounds */
+  --color-bg-accent: #64693C;     /* Dusty Olive, darkened for AA text contrast — Testimonials background */
+  --color-accent: #766153;        /* Ash Brown — eyebrow labels, focus rings, hover accents (light bg only) */
+  --color-border: #BCBD8B;        /* Dry Sage — hairline dividers, subtle borders */
   --maxw: 1240px;
 }
 
@@ -20,8 +25,8 @@ html {
 }
 
 body {
-  background: var(--bone);
-  color: var(--ink);
+  background: var(--color-bg);
+  color: var(--color-text);
   font-family: 'Jost', sans-serif;
   font-weight: 300;
   line-height: 1.6;
@@ -40,7 +45,7 @@ h1, h2, h3, .serif {
   letter-spacing: 0.32em;
   font-size: 0.68rem;
   font-weight: 500;
-  color: var(--clay);
+  color: var(--color-accent);
 }
 
 a {
@@ -60,14 +65,26 @@ img {
 }
 
 :focus-visible {
-  outline: 2px solid var(--clay);
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
+}
+
+/* Ash Brown (--color-accent) only reaches ~2:1 against the dark background
+   color, well under the 3:1 WCAG minimum for a visible focus indicator —
+   so on dark sections the ring switches to the light inverse-text color,
+   which keeps 9.98:1+ against every dark background in the site. */
+.statement :focus-visible,
+.testimonials :focus-visible,
+footer :focus-visible,
+.inquire :focus-visible,
+.btn.light:focus-visible {
+  outline-color: var(--color-text-inverse);
 }
 
 .btn {
   display: inline-block;
   padding: 0.95rem 2.4rem;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--color-text);
   font-size: 0.72rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -77,18 +94,18 @@ img {
 }
 
 .btn:hover {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--color-bg-inverse);
+  color: var(--color-text-inverse);
 }
 
 .btn.light {
-  border-color: var(--paper);
-  color: var(--paper);
+  border-color: var(--color-text-inverse);
+  color: var(--color-text-inverse);
 }
 
 .btn.light:hover {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 @media (prefers-reduced-motion: reduce) {

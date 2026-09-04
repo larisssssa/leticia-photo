@@ -48,7 +48,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 1.6rem;
-  color: var(--clay);
+  color: var(--color-accent);
 }
 
 @media (max-width: 900px) {

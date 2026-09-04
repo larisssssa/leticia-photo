@@ -100,7 +100,8 @@ const content = {
   // ---- Experience / process steps --------------------------------------------
   experience: {
     heading: "The Experience",
-    subtext: "From first hello to final gallery, here's what working together looks like.",
+    subtext:
+      "From first hello to final gallery, here's what working together looks like.",
     steps: [
       {
         eyebrow: "01",
@@ -149,14 +150,16 @@ const content = {
   // ---- Design tokens (kept in sync with src/index.css custom properties) -----
   // Changing these values updates this reference only — to actually change the
   // site's colors, edit the CSS custom properties in src/index.css.
+  // Names describe WHERE each color is used, not what it looks like, so the
+  // palette can be swapped later without touching any component file.
   theme: {
-    bone: "#EBE9E2", // linen
-    ink: "#15150C", // black
-    clay: "#9C9784", // darkgray (warm accent)
-    sage: "#42422D", // darkslategray
-    line: "#C4C3C9", // silver
-    paper: "#EBE9E2", // linen
-    silver: "#AFB4B2", // darkgray (spare neutral)
+    colorBg: "#FDFBF7", // Parchment — light section/page background
+    colorText: "#373D20", // Dark Khaki — body text on light backgrounds
+    colorBgInverse: "#373D20", // Dark Khaki — dark section backgrounds
+    colorTextInverse: "#FDFBF7", // Parchment — text on dark backgrounds
+    colorBgAccent: "#64693C", // Dusty Olive (darkened for AA contrast) — Testimonials background
+    colorAccent: "#766153", // Ash Brown — eyebrow labels, focus rings, hover accents
+    colorBorder: "#BCBD8B", // Dry Sage — hairline dividers, subtle borders
   },
 };
 
